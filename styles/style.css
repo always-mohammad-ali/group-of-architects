@@ -14,7 +14,7 @@
 /* Shared & common styles */
 .display-flex{
     display: flex;
-    
+    justify-content: space-evenly;
 
 }
 
@@ -32,6 +32,12 @@
     width: 1513px;
     
 } */
+
+main{
+    width: 1440px;
+    margin: 0 auto;
+    border: 2px solid purple;
+}
 
 .primary-btn{
     background-color: #FF900E;
@@ -112,6 +118,42 @@
     margin-bottom: 20px;
 }
 
+/* feature section */
+.feature-section{
+    align-items: center;
+    width: 70%;
+   
+    margin: 0 auto;
+    margin-top: 40px;
+    
+    
+}
+
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+    width: 100%;
+}
+.feature-img img{
+    width: 80%;
+}
+.feature-content{
+     width: 50%;
+}
+.feature-title{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.feature{
+    color: #FF900E;
+}
+
+.feature-description{
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+}
+
 
 /* Media query and responsiveness */
 
@@ -133,7 +175,31 @@
           padding: 0px;
           margin-bottom: 20px;
     }
+    .banner-img{
+        width: 85%;
+    }
 
+    /* feature item responsive */
+    main{
+       max-width: 100%; 
+    }
+    .feature-section{
+        flex-direction: column;
+        width: 100%;
+    }
+    .feature-img{
+        width: 100%;
+        border: 2px solid yellow;
+    }
+
+    .feature-title{
+        font-size: 1.7rem;
+        margin-top: 20px;
+    }
+    
+    .primary-btn{
+        padding: 10px;
+    }
 }
 
 
